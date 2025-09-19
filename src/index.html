@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Designer Portfolio UI</title>
 
     <!--- tailwind css output-->
     <link href="./output.css" rel="stylesheet" />
+
+    <!--- CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="bg-[#FFDDBF]">
@@ -36,7 +44,7 @@
     <section class="pt-6 pb-0 px-28 bg-[#FFDDBF]">
       <div class="flex items-center grid-cols-1 gap-55">
         <div>
-          <div class="pb-5">
+          <div class="pb-6">
             <h3 class="text-[#403930]">Hello</h3>
           </div>
           <h1
@@ -61,24 +69,138 @@
       </div>
     </section>
 
-    <section class="py-6 px-28 bg-[#FFDDBF]/50">
+    <section class="py-16 px-28 bg-[#FFDDBF]/50">
       <div>
-        <h1>My Recent Work</h1>
+        <h1 class="font-eczar font-bold text-4xl pb-7 text-[#403930]">
+          My Recent Work
+        </h1>
         <div>
-          <div class="flex items-center gap-64 bg-[#FFF8F2] px-6">
-            <div>
-              <h3>Sheepify States</h3>
-              <p>
-                Designed some empty state screens in kawaii style for the
-                popular sheepify app
-              </p>
+          <!---First-->
+          <div class="pb-6">
+            <div
+              class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
+            >
+              <div class="pl-8">
+                <h3 class="text-[#403930] text-3xl font-bold pb-4">
+                  Sheepify States
+                </h3>
+                <p class="text-[#594F43] text-lg pb-5">
+                  Designed some empty state screens in kawaii style for the
+                  popular sheepify app
+                </p>
+                <button
+                  class="bg-[#4E5E80] py-4 px-7 font-normal text-[#F3F2FF] mr-4 rounded-lg"
+                >
+                  View Case Study
+                </button>
+              </div>
+              <div class="size-1/2">
+                <img src="/src/images/work-1.png" alt="" />
+              </div>
             </div>
-            <div class="size-1/2">
-              <img src="/src/images/work-1.png" alt="" />
+          </div>
+
+          <!--- Second-->
+          <div class="pb-5">
+            <div
+              class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
+            >
+              <div class="pl-8">
+                <h3 class="text-[#403930] text-3xl font-bold pb-4">
+                  HoneyBunny
+                </h3>
+                <p class="text-[#594F43] text-lg pb-5">
+                  A colorful dashboard to manage your fictional projects and
+                  team, all in a single place.
+                </p>
+                <button
+                  class="bg-[#4E5E80] py-4 px-7 font-normal text-[#F3F2FF] mr-4 rounded-lg"
+                >
+                  View Case Study
+                </button>
+              </div>
+              <div class="size-1/2">
+                <img src="/src/images/work-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!---Third -->
+          <div class="pb-5">
+            <div
+              class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
+            >
+              <div class="pl-8">
+                <h3 class="text-[#403930] text-3xl font-bold pb-4">
+                  Memrise Redesign
+                </h3>
+                <p class="text-[#594F43] text-lg pb-5">
+                  I redesigned the popular language learning app memrise in
+                  kawaii style to make it more cute.
+                </p>
+                <button
+                  class="bg-[#4E5E80] py-4 px-7 font-normal text-[#F3F2FF] mr-4 rounded-lg"
+                >
+                  View Case Study
+                </button>
+              </div>
+              <div class="size-1/2">
+                <img src="/src/images/work-3.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="bg-[#FFDDBF] py-6 px-28" id="testimonals">
+      <div>
+        <h1 class="text-center text-5xl pt-24 pb-4 font-eczar font-bold">
+          Some Generous Words
+        </h1>
+        <p class="text-lg text-center pb-4">
+          Some of my favourite testimonals from my clients
+        </p>
+      </div>
+      <div class="swiper h-46">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide flex justify-center items-center text-center pt-20"
+          >
+            <p>
+              I had grown a little bit disappointed when I realized that my work
+              would not be taking me in any new, creative design directions.
+              Thankfully, I found Salman Khan and his creativity that goes above
+              and beyond, proving to be exactly what I needed to take.
+            </p>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            Slide 2
+          </div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+
+    <!--- Javascript Link-->
+    <script src="script.js"></script>
   </body>
 </html>
