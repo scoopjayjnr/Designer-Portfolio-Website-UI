@@ -15,6 +15,14 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!---Remix-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--- AOS Link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="bg-[#FFDDBF]">
@@ -34,7 +42,7 @@
         </div>
         <div>
           <button
-            class="bg-[#4E5E80] py-3 px-6 font-bold text-[#F3F2FF] rounded-lg hover:outline-1 hover:bg-none transition"
+            class="bg-transparent py-3 px-7 font-bold text-amber-950 rounded-sm outline-amber-950 outline-3 cursor-pointer hover:shadow-lg"
           >
             Download
           </button>
@@ -44,26 +52,31 @@
     <section class="pt-6 pb-0 px-28 bg-[#FFDDBF]">
       <div class="flex items-center grid-cols-1 gap-55">
         <div>
-          <div class="pb-6">
+          <div class="pb-6" data-aos="fade-down">
             <h3 class="text-[#403930]">Hello</h3>
           </div>
           <h1
             class="text-[4rem] font-eczar font-bold text-[#403930] pb-6 leading-18"
+            data-aos="fade-down"
           >
             I'm Salman Khan, <br />
             A Creative Designer <br />
             and Storyteller
           </h1>
-          <div class>
+          <div class="gap-4">
             <button
-              class="bg-[#4E5E80] py-4 px-7 font-bold text-[#F3F2FF] mr-4 rounded-lg"
+              class="bg-[#4E5E80] py-4 px-7 font-bold text-[#F3F2FF] mr-4 rounded-lg cursor-pointer"
             >
               View My Work
             </button>
-            <button>Contact Me</button>
+            <button
+              class="bg-transparent py-3 px-7 font-bold text-amber-950 rounded-lg outline-amber-950 outline-3 cursor-pointer hover:shadow-lg transition-all"
+            >
+              Contact Me
+            </button>
           </div>
         </div>
-        <div class="size-1/3">
+        <div class="size-1/3" data-aos="fade-down" data-aos-duration="1500">
           <img src="images/hero-img.png" alt="hero-img" />
         </div>
       </div>
@@ -71,12 +84,22 @@
 
     <section class="py-16 px-28 bg-[#FFDDBF]/50">
       <div>
-        <h1 class="font-eczar font-bold text-4xl pb-7 text-[#403930]">
+        <h1
+          class="font-eczar font-bold text-4xl pb-7 text-[#403930]"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           My Recent Work
         </h1>
         <div>
           <!---First-->
-          <div class="pb-6">
+          <div
+            class="pb-6"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <div
               class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
             >
@@ -101,7 +124,12 @@
           </div>
 
           <!--- Second-->
-          <div class="pb-5">
+          <div
+            class="pb-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div
               class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
             >
@@ -126,7 +154,12 @@
           </div>
 
           <!---Third -->
-          <div class="pb-5">
+          <div
+            class="pb-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
             <div
               class="flex items-center gap-64 bg-[#FFF8F2] rounded-3xl px-6 shadow-md"
             >
@@ -153,7 +186,7 @@
       </div>
     </section>
 
-    <section class="bg-[#FFDDBF] py-6 px-28" id="testimonals">
+    <section class="bg-[#FFDDBF] py-6 px-28">
       <div>
         <h1 class="text-center text-5xl pt-24 pb-4 font-eczar font-bold">
           Some Generous Words
@@ -162,24 +195,65 @@
           Some of my favourite testimonals from my clients
         </p>
       </div>
-      <div class="swiper h-46">
+      <div class="swiper h-64 w-auto">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div
-            class="swiper-slide flex justify-center items-center text-center pt-20"
+            class="swiper-slide flex justify-center items-center text-center pt-16"
           >
-            <p>
-              I had grown a little bit disappointed when I realized that my work
-              would not be taking me in any new, creative design directions.
-              Thankfully, I found Salman Khan and his creativity that goes above
-              and beyond, proving to be exactly what I needed to take.
-            </p>
+            <div class="flex grid-cols-1 items-center ml-72 gap-8">
+              <div
+                class="w-24 h-24 rounded-full bg-blue-500 flex items-center justify-center"
+              >
+                <img src="/src/images/hero-img.png" />
+              </div>
+              <p class="w-2/4">
+                I had grown a little bit disappointed when I realized that my
+                work would not be taking me in any new, creative design
+                directions. Thankfully, I found Salman Khan and his creativity
+                that goes above and beyond, proving to be exactly what I needed
+                to take.
+              </p>
+            </div>
           </div>
-          <div class="swiper-slide flex justify-center items-center">
-            Slide 2
+
+          <div
+            class="swiper-slide flex justify-center items-center text-center pt-16"
+          >
+            <div class="flex grid-cols-1 items-center ml-72 gap-12">
+              <div
+                class="w-24 h-24 rounded-full bg-blue-500 flex items-center justify-center"
+              >
+                <img src="/src/images/hero-img.png" />
+              </div>
+              <p class="w-2/4">
+                Salman Khan is the best designer that I have ever worked with.
+                He is seriously what you would call 'creative': he innovatively
+                solves all sorts of problems and always delivers both prompt and
+                high quality work. I can't recommend him enough!
+              </p>
+            </div>
           </div>
-          <div class="swiper-slide">Slide 3</div>
+
+          <div
+            class="swiper-slide flex justify-center items-center text-center pt-16"
+          >
+            <div class="flex grid-cols-1 items-center ml-72 gap-8">
+              <div
+                class="w-24 h-24 rounded-full bg-blue-400 flex items-center justify-center"
+              >
+                <img src="/src/images/hero-img.png" />
+              </div>
+              <p class="w-2/4">
+                I had grown a little bit disappointed when I realized that my
+                work would not be taking me in any new, creative design
+                directions. Thankfully, I found Salman Khan and his creativity
+                that goes above and beyond, proving to be exactly what I needed
+                to take.
+              </p>
+            </div>
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -187,20 +261,106 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
+    </section>
 
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <section class="bg-[#FFDDBF]/50 pt-6 pb-24 px-28">
+      <div class="grid grid-cols-2 justify-center items-center gap-48">
+        <div
+          class="ml-24"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <h1 class="font-eczar font-bold text-4xl pb-8">
+            A Little Bit About Me
+          </h1>
+          <p
+            class="w-3/4"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            I am Salman Khan from Lucknow, India. I am working in an Indian
+            Startup as a User Eperience Designer for the past two years.
+          </p>
+          <p
+            class="w-3/4 pb-4"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            I got featured various times on many big and small marketplaces,
+            portfolio websites and blogs. I also received some awards and
+            recognitions from some of the big and small award companies. Besides
+            designing, I like to watch anime, read books and solve sudoku.
+          </p>
+          <button
+            class="bg-[#4E5E80] py-4 px-7 font-normal text-[#F3F2FF] rounded-lg"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            View Case Study
+          </button>
+        </div>
+        <div class="size-96">
+          <img
+            src="/src/images/hero-img-2.png"
+            alt=""
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          />
+        </div>
+      </div>
+    </section>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+    <section class="py-16 px-28 bg-[#FFDDBF]">
+      <div>
+        <h1
+          class="text-6xl pt-18 pb-6 font-eczar font-bold w-3/4 text-amber-950"
+        >
+          Let’s work together and make everything super cute and super useful.
+        </h1>
+      </div>
+      <div>
+        <div class="flex grid-cols-1 justify-between items-center">
+          <button
+            class="bg-transparent py-4 px-7 font-bold text-amber-950 rounded-lg outline-amber-950 outline-3"
+          >
+            View Case Study
+          </button>
+          <div
+            class="flex text-3xl *:text-amber-950 *:shadow *:p-3 *:bg-amber-50 gap-4"
+          >
+            <li class="list-none">
+              <a href=""><i class="ri-facebook-circle-fill"></i></a>
+            </li>
+            <li class="list-none">
+              <a href=""><i class="ri-instagram-fill"></i></a>
+            </li>
+            <li class="list-none">
+              <a href=""><i class="ri-dribbble-line"></i></a>
+            </li>
+            <li class="list-none">
+              <a href=""><i class="ri-tiktok-fill"></i></a>
+            </li>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--- Javascript Link-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 50,
+        duration: 1000,
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
